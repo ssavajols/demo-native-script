@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var observableModule = require("data/observable");
+function HomeViewModel() {
+    var viewModel = observableModule.fromObject({
+    /* Add your view model properties here */
+    });
+    return viewModel;
+}
+exports.HomeViewModel = HomeViewModel;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaG9tZS12aWV3LW1vZGVsLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiaG9tZS12aWV3LW1vZGVsLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsa0RBQW1EO0FBRW5EO0lBQ0UsSUFBTSxTQUFTLEdBQUcsZ0JBQWdCLENBQUMsVUFBVSxDQUFDO0lBQ3hDLHlDQUF5QztLQUM5QyxDQUFDLENBQUE7SUFFRixPQUFPLFNBQVMsQ0FBQTtBQUNsQixDQUFDO0FBTkQsc0NBTUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgKiBhcyBvYnNlcnZhYmxlTW9kdWxlIGZyb20gJ2RhdGEvb2JzZXJ2YWJsZSdcclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBIb21lVmlld01vZGVsICgpIHtcclxuICBjb25zdCB2aWV3TW9kZWwgPSBvYnNlcnZhYmxlTW9kdWxlLmZyb21PYmplY3Qoe1xyXG4gICAgICAgIC8qIEFkZCB5b3VyIHZpZXcgbW9kZWwgcHJvcGVydGllcyBoZXJlICovXHJcbiAgfSlcclxuXHJcbiAgcmV0dXJuIHZpZXdNb2RlbFxyXG59XHJcbiJdfQ==

@@ -1,0 +1,19 @@
+"use strict";
+/*
+In NativeScript, a file with the same name as an XML file is known as
+a code-behind file. The code-behind is a great place to place your view
+logic, and to set up your page’s data binding.
+*/
+Object.defineProperty(exports, "__esModule", { value: true });
+var home_view_model_1 = require("./home-view-model");
+function onNavigatingTo(args) {
+    var page = args.object;
+    page.bindingContext = home_view_model_1.HomeViewModel();
+}
+exports.onNavigatingTo = onNavigatingTo;
+function onTap(args) {
+    var button = args.object;
+    button.text = 'I was tapped !';
+}
+exports.onTap = onTap;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaG9tZS1wYWdlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiaG9tZS1wYWdlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQTs7OztFQUlFOztBQUVGLHFEQUFpRDtBQUVqRCx3QkFBZ0MsSUFBSTtJQUNsQyxJQUFNLElBQUksR0FBRyxJQUFJLENBQUMsTUFBTSxDQUFBO0lBQ3hCLElBQUksQ0FBQyxjQUFjLEdBQUcsK0JBQWEsRUFBRSxDQUFBO0FBQ3ZDLENBQUM7QUFIRCx3Q0FHQztBQUVELGVBQXVCLElBQUk7SUFDekIsSUFBTSxNQUFNLEdBQUcsSUFBSSxDQUFDLE1BQU0sQ0FBQTtJQUMxQixNQUFNLENBQUMsSUFBSSxHQUFHLGdCQUFnQixDQUFBO0FBQ2hDLENBQUM7QUFIRCxzQkFHQyIsInNvdXJjZXNDb250ZW50IjpbIi8qXHJcbkluIE5hdGl2ZVNjcmlwdCwgYSBmaWxlIHdpdGggdGhlIHNhbWUgbmFtZSBhcyBhbiBYTUwgZmlsZSBpcyBrbm93biBhc1xyXG5hIGNvZGUtYmVoaW5kIGZpbGUuIFRoZSBjb2RlLWJlaGluZCBpcyBhIGdyZWF0IHBsYWNlIHRvIHBsYWNlIHlvdXIgdmlld1xyXG5sb2dpYywgYW5kIHRvIHNldCB1cCB5b3VyIHBhZ2XigJlzIGRhdGEgYmluZGluZy5cclxuKi9cclxuXHJcbmltcG9ydCB7IEhvbWVWaWV3TW9kZWwgfSBmcm9tICcuL2hvbWUtdmlldy1tb2RlbCdcclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBvbk5hdmlnYXRpbmdUbyAoYXJncykge1xyXG4gIGNvbnN0IHBhZ2UgPSBhcmdzLm9iamVjdFxyXG4gIHBhZ2UuYmluZGluZ0NvbnRleHQgPSBIb21lVmlld01vZGVsKClcclxufVxyXG5cclxuZXhwb3J0IGZ1bmN0aW9uIG9uVGFwIChhcmdzKSB7XHJcbiAgY29uc3QgYnV0dG9uID0gYXJncy5vYmplY3RcclxuICBidXR0b24udGV4dCA9ICdJIHdhcyB0YXBwZWQgISdcclxufVxyXG4iXX0=
