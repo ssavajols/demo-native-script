@@ -1,9 +1,9 @@
 if (global.TNS_WEBPACK) {
     // Register tns-core-modules UI framework modules
-    require("bundle-entry-points");
-
+    require('bundle-entry-points');
     // register application modules
     // This will register each `root`, `page`, `fragment` postfixed xml, css, js, ts, scss file in the app/ folder
-    const context = require.context("~/", true, /(root|page|fragment)\.(xml|css|js|ts|scss)$/);
+    var context = require.context('~/', true, /(root|page|fragment)\.(xml|css|js|ts|scss)$/);
     global.registerWebpackModules(context);
 }
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYnVuZGxlLWNvbmZpZy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImJ1bmRsZS1jb25maWcudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsSUFBSSxNQUFNLENBQUMsV0FBVyxFQUFFO0lBQ3BCLGlEQUFpRDtJQUNuRCxPQUFPLENBQUMscUJBQXFCLENBQUMsQ0FBQTtJQUU1QiwrQkFBK0I7SUFDL0IsOEdBQThHO0lBQ2hILElBQU0sT0FBTyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsSUFBSSxFQUFFLElBQUksRUFBRSw2Q0FBNkMsQ0FBQyxDQUFBO0lBQzFGLE1BQU0sQ0FBQyxzQkFBc0IsQ0FBQyxPQUFPLENBQUMsQ0FBQTtDQUN2QyIsInNvdXJjZXNDb250ZW50IjpbImlmIChnbG9iYWwuVE5TX1dFQlBBQ0spIHtcclxuICAgIC8vIFJlZ2lzdGVyIHRucy1jb3JlLW1vZHVsZXMgVUkgZnJhbWV3b3JrIG1vZHVsZXNcclxuICByZXF1aXJlKCdidW5kbGUtZW50cnktcG9pbnRzJylcclxuXHJcbiAgICAvLyByZWdpc3RlciBhcHBsaWNhdGlvbiBtb2R1bGVzXHJcbiAgICAvLyBUaGlzIHdpbGwgcmVnaXN0ZXIgZWFjaCBgcm9vdGAsIGBwYWdlYCwgYGZyYWdtZW50YCBwb3N0Zml4ZWQgeG1sLCBjc3MsIGpzLCB0cywgc2NzcyBmaWxlIGluIHRoZSBhcHAvIGZvbGRlclxyXG4gIGNvbnN0IGNvbnRleHQgPSByZXF1aXJlLmNvbnRleHQoJ34vJywgdHJ1ZSwgLyhyb290fHBhZ2V8ZnJhZ21lbnQpXFwuKHhtbHxjc3N8anN8dHN8c2NzcykkLylcclxuICBnbG9iYWwucmVnaXN0ZXJXZWJwYWNrTW9kdWxlcyhjb250ZXh0KVxyXG59XHJcbiJdfQ==

@@ -33,18 +33,16 @@
     <key>UISupportedInterfaceOrientations</key>
     <array>
       <string>UIInterfaceOrientationPortrait</string>
-      <string>UIInterfaceOrientationLandscapeLeft</string>
-      <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
     <key>UISupportedInterfaceOrientations~ipad</key>
     <array>
-      <string>UIInterfaceOrientationPortrait</string>
-      <string>UIInterfaceOrientationPortraitUpsideDown</string>
       <string>UIInterfaceOrientationLandscapeLeft</string>
       <string>UIInterfaceOrientationLandscapeRight</string>
+      <string>UIInterfaceOrientationPortrait</string>
+      <string>UIInterfaceOrientationPortraitUpsideDown</string>
     </array>
     <key>CFBundleIdentifier</key>
-    <string>org.nativescript.RRRrrr</string>
+    <string>org.nativescript.RRRrrrooms</string>
     <key>CFBundleURLTypes</key>
     <array>
       <dict>
@@ -52,7 +50,7 @@
         <string>Editor</string>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>orgnativescriptRRRrrr</string>
+          <string>orgnativescriptRRRrrrooms</string>
         </array>
       </dict>
     </array>

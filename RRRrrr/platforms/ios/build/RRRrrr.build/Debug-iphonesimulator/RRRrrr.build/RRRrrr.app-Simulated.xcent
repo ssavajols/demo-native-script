@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>FAKETEAMID.org.nativescript.RRRrrr</string>
+	<string>1.org.nativescript.RRRrrrooms</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>FAKETEAMID.org.nativescript.RRRrrr</string>
+		<string>1.org.nativescript.RRRrrrooms</string>
 	</array>
 </dict>
 </plist>

@@ -1,0 +1,4 @@
+#Tue Apr 24 18:59:58 CEST 2018
+base.0=/Users/ssavajols/WORK/GIT/demo-native-script/RRRrrr/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

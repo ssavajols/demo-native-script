@@ -4,22 +4,30 @@
   "readme": "NativeScript Application",
   "repository": "<fill-your-repository-here>",
   "nativescript": {
-    "id": "org.nativescript.RRRrrr",
+    "id": "org.nativescript.RRRrrrooms",
     "tns-ios": {
+      "version": "4.0.1"
+    },
+    "tns-android": {
       "version": "4.0.1"
     }
   },
   "dependencies": {
     "nativescript-theme-core": "~1.0.4",
+    "nativescript-ui-dataform": "^3.5.2",
     "tns-core-modules": "4.0.0",
     "tslint": "^5.9.1",
     "tslint-config-standard": "^7.0.0"
   },
   "devDependencies": {
+    "babel-traverse": "6.26.0",
+    "babel-types": "6.26.0",
+    "babylon": "6.18.0",
     "clean-webpack-plugin": "~0.1.19",
     "copy-webpack-plugin": "~4.3.0",
     "css-loader": "~0.28.7",
     "extract-text-webpack-plugin": "~3.0.2",
+    "lazy": "1.0.11",
     "nativescript-dev-typescript": "^0.7.1",
     "nativescript-dev-webpack": "~0.10.0",
     "nativescript-worker-loader": "~0.8.1",

@@ -1,0 +1,23 @@
+.action-bar {
+  background-color: #fac950;
+}
+
+.action-bar-title {
+  color: #00264d;
+  font-weight: bold;
+}
+
+.reservation-item {
+  /* margin: 10 0; */
+}
+
+.room-info {
+  border-bottom-width: 1;
+  border-bottom-color: #fac950;
+  margin: 0 15 10;
+}
+
+.room-places {
+  margin-top: 7;
+  margin-left: 5;
+}

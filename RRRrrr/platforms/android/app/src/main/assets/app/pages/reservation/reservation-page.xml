@@ -1,0 +1,40 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+    
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="{{ roomName }}" horizontalAlignment="center" margin="15" ></Label>
+    </ActionBar>
+
+
+    <GridLayout columns="*" rows="auto, *, 100">
+
+        <StackLayout columns="auto" verticalAlignment="middle" class="room-info">
+            <Image src="{{ '~/images/rooms/' + roomName + '.png' }}" stretch="none" horizontalAlignment="center"></Image>
+
+            <StackLayout orientation="horizontal">
+                <Label text="{{ roomName }}" class="room-label"></Label>
+                <Label text="{{ roomPlaces + ' places'}}" class="room-places"></Label>
+            </StackLayout>
+        </StackLayout>        
+
+        <GridLayout rows="*" columns="*" row="1">
+            <ListView visibility="{{ reservations.length > 0 ? 'visible' : 'hidden' }}"  items="{{ reservations }}">
+                <ListView.itemTemplate>
+                    <GridLayout columns="15, *" rows="auto" verticalAlignment="middle">
+                        <StackLayout col="1" verticalAlignment="middle" class="reservation-item">
+                            <Label text="{{ label }}" textWrap="true" class="reservation-label"></Label>
+                            <HtmlView html="{{ description }}"></HtmlView>
+                            <Label text="{{ dateStart }}" textWrap="true" class="reservation-date-start"></Label>
+                            <Label text="{{ dateEnd }}" textWrap="true" class="reservation-date-end"></Label>
+                        </StackLayout>
+                    </GridLayout>
+                </ListView.itemTemplate>
+            </ListView>
+
+            <Label visibility="{{ reservations.length > 0 ? 'hidden' : 'visible' }}" horizontalAlignment="center" verticalAlignment="middle" text="Aucune réservation"></Label>
+        </GridLayout>
+
+        <Button row="3" text="Réserver cette salle" tap="onGoToAddReservationPage"></Button>
+    </GridLayout>
+</Page>

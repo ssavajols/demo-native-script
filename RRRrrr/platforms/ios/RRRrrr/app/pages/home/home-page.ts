@@ -1,17 +1,14 @@
-/*
-In NativeScript, a file with the same name as an XML file is known as
-a code-behind file. The code-behind is a great place to place your view
-logic, and to set up your page’s data binding.
-*/
-
+import { GestureEventData } from 'tns-core-modules/ui/gestures/gestures'
+import { EventData, Page } from 'tns-core-modules/ui/page/page'
+import { goToReservationPage } from '~/shared/routing'
 import { HomeViewModel } from './home-view-model'
 
-export function onNavigatingTo (args) {
-  const page = args.object
-  page.bindingContext = HomeViewModel()
+export function onNavigatingTo (args: EventData) {
+  const page: Page = args.object as Page
+  const model = new HomeViewModel()
+  page.bindingContext = model
 }
 
-export function onTap (args) {
-  const button = args.object
-  button.text = 'I was tapped !'
+export function onTap (args: GestureEventData) {
+  goToReservationPage(args.view.bindingContext)
 }

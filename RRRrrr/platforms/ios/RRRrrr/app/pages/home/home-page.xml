@@ -3,12 +3,21 @@
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
     <ActionBar class="action-bar">
-        <Label class="action-bar-title" text="Home"></Label>
+        <Label class="action-bar-title" text="RRRrrr!" horizontalAlignment="center" margin="15" ></Label>
     </ActionBar>
 
-    <GridLayout>
-        
-        <Button text="TAP" tap="onTap"></Button>
-        <!-- Add your page content here -->
-    </GridLayout>
+    <ListView items="{{ rooms }}" itemTap="onTap">
+        <ListView.itemTemplate>
+            <GridLayout columns="auto, auto" rows="auto">
+                <GridLayout columns="auto" rows="auto">
+                    <Image class="room-image" src="{{ '~/images/rooms/' + label + '.png' }}"></Image>
+                </GridLayout>
+
+                <StackLayout col="1" verticalAlignment="middle">
+                    <Label text="{{ label }}" textWrap="true" class="room-label"></Label>
+                    <Label text="{{ places + ' places' }}" textWrap="true" class="room-places"></Label>
+                </StackLayout>
+            </GridLayout>
+        </ListView.itemTemplate>
+    </ListView>
 </Page>

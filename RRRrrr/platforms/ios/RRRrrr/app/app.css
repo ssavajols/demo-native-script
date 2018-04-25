@@ -18,3 +18,25 @@ components that have the btn class name.
 .btn {
     font-size: 18;
 }
+
+.action-bar-title {
+    text-transform: capitalize;
+}
+
+.room-image {
+  vertical-align: middle;
+  margin: 0 30 0 10;
+}
+
+.room-label {
+  font-size: 24;
+  text-transform: capitalize;
+  color: #666666;
+  vertical-align: middle;
+}
+
+.room-places {
+  font-size: 12;
+  text-transform: capitalize;
+  color: #d49f0b;
+}

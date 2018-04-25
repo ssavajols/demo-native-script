@@ -14,6 +14,12 @@
 		D57F10C73D8F4720A0E2A17A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 712FB2784478462CAB782924 /* build.xcconfig */; };
 		55CA9D3C206C4FB2B1A7E4A7 /* TNSWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8DE40BC96794490B176C6E3 /* TNSWidgets.framework */; };
 		A39C8A19765C47E3AB6A843B /* TNSWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8DE40BC96794490B176C6E3 /* TNSWidgets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C58D849FBEDF41F0824964D6 /* TNSDataForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0AF3C699FD84013B97876D9 /* TNSDataForm.framework */; };
+		8B7CB500239344E4B97503DE /* TNSDataForm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0AF3C699FD84013B97876D9 /* TNSDataForm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		11D3F1B0D0844FF0AB436BDA /* TNSAutoComplete.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6B0AA8B0F4820AA864CDE /* TNSAutoComplete.framework */; };
+		70D7DF28DDAD4915B92D3279 /* TNSAutoComplete.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6B0AA8B0F4820AA864CDE /* TNSAutoComplete.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B72E305F45C341C09B8A9553 /* TNSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB81BA2CBC74F21A9DC92AB /* TNSCore.framework */; };
+		4B9FAD44147B47118FBDB2E9 /* TNSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB81BA2CBC74F21A9DC92AB /* TNSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +30,9 @@
 			dstSubfolderSpec = 10;
 			files = (
 				A39C8A19765C47E3AB6A843B /* TNSWidgets.framework in Embed Frameworks */,
+				8B7CB500239344E4B97503DE /* TNSDataForm.framework in Embed Frameworks */,
+				70D7DF28DDAD4915B92D3279 /* TNSAutoComplete.framework in Embed Frameworks */,
+				4B9FAD44147B47118FBDB2E9 /* TNSCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +54,9 @@
 		94DA0E418F2E424E8F05E0CA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = LaunchScreen.storyboard; path = "RRRrrr/Resources/LaunchScreen.storyboard"; sourceTree = "<group>"; fileEncoding = 4; };
 		712FB2784478462CAB782924 /* build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = build.xcconfig; path = "RRRrrr/Resources/build.xcconfig"; sourceTree = "<group>"; fileEncoding = 4; };
 		E8DE40BC96794490B176C6E3 /* TNSWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSWidgets.framework; path = "$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework"; sourceTree = "<group>"; };
+		A0AF3C699FD84013B97876D9 /* TNSDataForm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSDataForm.framework; path = "$(SRCROOT)/../../node_modules/nativescript-ui-dataform/platforms/ios/TNSDataForm.framework"; sourceTree = "<group>"; };
+		80E6B0AA8B0F4820AA864CDE /* TNSAutoComplete.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSAutoComplete.framework; path = "$(SRCROOT)/../../node_modules/nativescript-ui-autocomplete/platforms/ios/TNSAutoComplete.framework"; sourceTree = "<group>"; };
+		4CB81BA2CBC74F21A9DC92AB /* TNSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSCore.framework; path = "$(SRCROOT)/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55CA9D3C206C4FB2B1A7E4A7 /* TNSWidgets.framework in Frameworks */,
+				C58D849FBEDF41F0824964D6 /* TNSDataForm.framework in Frameworks */,
+				11D3F1B0D0844FF0AB436BDA /* TNSAutoComplete.framework in Frameworks */,
+				B72E305F45C341C09B8A9553 /* TNSCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				E8DE40BC96794490B176C6E3 /* TNSWidgets.framework */,
+				A0AF3C699FD84013B97876D9 /* TNSDataForm.framework */,
+				80E6B0AA8B0F4820AA864CDE /* TNSAutoComplete.framework */,
+				4CB81BA2CBC74F21A9DC92AB /* TNSCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,6 +170,12 @@
 				CLASSPREFIX = TNS;
 				LastUpgradeCheck = 500;
 				ORGANIZATIONNAME = Telerik;
+				TargetAttributes = {
+					858B83EF18CA22B800AB12DE = {
+						DevelopmentTeam = 1;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 858B832918CA111C00AB12DE /* Build configuration list for PBXProject "RRRrrr" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -335,6 +359,8 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_MODULES_AUTOLINK = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 1;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RRRrrr/RRRrrr-Prefix.pch";
@@ -350,6 +376,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-dataform/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-autocomplete/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-core/platforms/ios\"",
 				);
 			};
 			name = Debug;
@@ -361,6 +390,8 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_MODULES_AUTOLINK = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 1;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RRRrrr/RRRrrr-Prefix.pch";
@@ -372,6 +403,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-dataform/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-autocomplete/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-core/platforms/ios\"",
 				);
 			};
 			name = Release;

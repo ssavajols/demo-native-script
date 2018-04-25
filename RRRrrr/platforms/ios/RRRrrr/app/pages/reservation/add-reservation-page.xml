@@ -1,0 +1,33 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+    
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Réserver cette salle" horizontalAlignment="center" margin="15" ></Label>
+        <ActionItem text="Enregistrer" tap="onSave" ios.position="right" android.position="right" />
+    </ActionBar>
+
+
+    
+        <GridLayout columns="*" rows="auto, *">
+
+            <StackLayout columns="auto" verticalAlignment="middle" class="room-info">
+                <Image src="{{ '~/images/rooms/' + roomName + '.png' }}" stretch="none" horizontalAlignment="center"></Image>
+
+                <StackLayout orientation="horizontal">
+                    <Label text="{{ roomName }}" class="room-label"></Label>
+                    <Label text="{{ roomPlaces + ' places'}}" class="room-places"></Label>
+                </StackLayout>
+            </StackLayout>      
+            <ScrollView row="1">
+                <StackLayout class="add-reservation">
+                    <TextField id="label" hint="Label" class="add-reservation-label" />
+                    <TextView id="description" hint="Description..."  class="add-reservation-description" />
+                    <Label text="Début"  class="add-reservation-date" />
+                    <TimePicker id="dateDebut" />
+                    <Label text="Fin"  class="add-reservation-date" />
+                    <TimePicker id="dateFin" />
+                </StackLayout>
+            </ScrollView>
+        </GridLayout>
+</Page>
